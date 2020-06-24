@@ -6,7 +6,11 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
-  }
+  },
+  {
+    path: 'writing',
+    loadChildren: () => import('./writing/writing.module').then( m => m.WritingPageModule)
+  },
 ];
 
 @NgModule({

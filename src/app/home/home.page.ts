@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,9 @@ import { Component } from '@angular/core';
 export class HomePage {
   private boardList: any =[];
 
-  constructor() {
+  constructor(
+    private router: Router,
+  ) {
     this.boardList.push(
       { num: 0, tag: '[동물]', title: '과자 남은 거 좀 있나', contents: '사진', date: '6-24-13:00', hit: 23},
       { num: 1, tag: '[엽기]', title: '나도 웃겨', contents: '글글글글글', date: '6-25-7:59', hit: 2},
@@ -17,5 +20,7 @@ export class HomePage {
       { num: 5, tag: '[사회]', title: '북한 도발', contents: '북한이 삐라를 ~~ ', date: '6-27-17:16', hit: 105},
     )
   }
-
+  moveToPage(pagename: String){
+    this.router.navigate(['home', pagename]);
+  }
 }

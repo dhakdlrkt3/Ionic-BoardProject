@@ -16,7 +16,7 @@
           <ion-col size="10">
           </ion-col>  
            <ion-col size="2">
-            <ion-button>글쓰기</ion-button>   
+            <ion-button (click)="moveToPage('writing')">글쓰기</ion-button>   
           </ion-col>           
         </ion-row>
         <ion-row *ngFor="let item of boardList" :key="index">

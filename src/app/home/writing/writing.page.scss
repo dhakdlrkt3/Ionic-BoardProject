@@ -7,3 +7,27 @@ ion-title {
     height: 100%;
     text-align: center;
   }
+
+  .line-input{
+    margin: 30px 0 0px 0 ;
+    padding: 0 20px 0 20px;
+    ion-item{
+      border: 1px solid #000000;
+      --highlight-height:0;
+      border-radius: 10px;
+      &.item-has-focus{
+        border: 1px solid #06500a;
+      }
+    }
+    ion-label{
+      font-weight: 900; 
+      font-size: 20px;
+    }
+    ion-textarea{
+      padding: 10px;
+      line-height: 1.5;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-shadow: 1px 1px 1px #999;
+    }
+  }

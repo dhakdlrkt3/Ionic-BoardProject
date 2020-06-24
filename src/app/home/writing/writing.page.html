@@ -20,11 +20,11 @@
           <div class="line-input">
             <ion-item>
               <ion-label position="floating">제목</ion-label>
-              <ion-input placeholder="제목을 입력하세요."></ion-input>
+              <ion-input [(ngModel)]="title" placeholder="제목을 입력하세요."></ion-input>
             </ion-item>
             <ion-item>
               <ion-label position="floating">내용</ion-label>
-              <ion-textarea rows="12" cols="150" placeholder="내용을 입력하세요."></ion-textarea>
+              <ion-textarea [(ngModel)]="contents" rows="12" cols="150" placeholder="내용을 입력하세요."></ion-textarea>
             </ion-item>
           </div>
         </ion-row>
